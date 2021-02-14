@@ -46,6 +46,8 @@ https://intense-meadow-24737.herokuapp.com/
 
 _Photos of this Project:_
 
+![Screen Shot 2021-02-14 at 2 37 00 PM](https://user-images.githubusercontent.com/70075378/107889806-46815280-6ed2-11eb-8cda-3fb327d5eda1.png)
+
 ## Technology
 
 The technologies that were used in this application are CSS, Node.js, Express.js, Logger.js, Compression.js, Mongoose.js, Github and Heroku.
