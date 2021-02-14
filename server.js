@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-  "mongodb+srv://Cody-Admin:<root>@cluster0.ujg3d.mongodb.net/<budgettracker>?retryWrites=true&w=majority",
+  "mongodb+srv://Cody-Admin:root@foo.bar.mongodb.net/budgettracker?retryWrites=true",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
