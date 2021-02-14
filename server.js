@@ -18,8 +18,13 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+const MONGODB_URL =
+  "mongodb+srv://Cody-Admin:root@foo.bar.mongodb.net/budgettracker?retryWrites=true";
+
+const mongoUrl = process.env.MONGODB_URL || "mongodb://localhost/budgettracker";
 mongoose.connect(
-  "mongodb+srv://Cody-Admin:root@foo.bar.mongodb.net/budgettracker?retryWrites=true",
+  mongoUrl,
+  // "mongodb+srv://Cody-Admin:root@foo.bar.mongodb.net/budgettracker?retryWrites=true",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
