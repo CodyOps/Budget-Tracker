@@ -4,7 +4,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
-//Set the port to local host 3000
+//Set the port to local host 3000 or heroku port
 const PORT = process.env.PORT || 3000;
 
 //Use express
