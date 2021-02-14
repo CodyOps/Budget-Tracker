@@ -1,10 +1,13 @@
+//Require in modules
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
+//Set the port to local host 3000
 const PORT = 3000;
 
+//Use express
 const app = express();
 
 app.use(logger("dev"));
@@ -17,7 +20,7 @@ app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
 });
 
 // routes
