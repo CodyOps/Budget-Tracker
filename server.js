@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 
 //Set the port to local host 3000
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 //Use express
 const app = express();
